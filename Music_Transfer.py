@@ -1,11 +1,14 @@
-# This program transfers a YouTube playlist to Spotify
-
-# Retrieve and enter Spotify developer credentials to effectively use program
-# Enter YouTube playlist URL, and select to add to existing Spotify playlists or create one
-# If creating, prompts user to enter relevant information; name, description, and visibility
-# Dynamically updates window to show songs being transferred and amount left to transfer
-
-# Last Updated: 8/21/25
+# YouTube to Spotify Playlist Transfer Tool
+#
+# This program allows users to transfer a YouTube playlist to Spotify.
+#
+# Features:
+# - Enter Spotify developer credentials to enable full functionality.
+# - Input a YouTube playlist URL and choose to add tracks to an existing Spotify playlist or create a new one.
+# - When creating a new playlist, prompts for name, description, and visibility settings.
+# - Dynamically updates the GUI to show songs being transferred and the remaining count.
+#
+# Last Updated: 08/21/25
 
 
 import yt_dlp
@@ -181,4 +184,5 @@ def AddSongs(pid, url):
 
 # starts tkinter main loop and calls first window to start program
 ClientAuthWindow()
+
 root.mainloop()
